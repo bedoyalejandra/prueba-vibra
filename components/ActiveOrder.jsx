@@ -18,31 +18,27 @@ const ActiveOrder = ({ data }) => {
     description += char;
   }
   return (
-    <div>
-      <h1
+    <div className="column-left">
+      <div
         style={{
           color: "DodgerBlue",
           fontSize: 12,
-        }}
-      >
-        • Pedido activo en mi red de aliados
-      </h1>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          alignItems: "center",
-          alignContent: "center",
           flexDirection: "row",
+          display: "flex",
         }}
       >
+        <div className="text-green-500	mr-1">⬤</div>
+        Pedido activo en mi red de aliados
+      </div>
+
+      <div className="box">
         <FaHouseMedicalFlag size={50} color="grey" className="m-5" />
         <div
           style={{
             margin: 10,
           }}
         >
-          <h1 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+          <h1 className="text-base font-semibold leading-7 tracking-tight text-gray-900 text-left ">
             {data.propertyTypes.map((object) => object.name + " ")}
           </h1>
 
@@ -53,8 +49,7 @@ const ActiveOrder = ({ data }) => {
                 style={{
                   color: "grey",
                   display: "flex",
-                  alignItems: "center",
-                  alignContent: "center",
+
                   flexDirection: "row",
                   fontSize: 12,
                 }}
@@ -63,9 +58,9 @@ const ActiveOrder = ({ data }) => {
               </div>
             );
           })}
-          <h1 className="text-base leading-7 tracking-tight text-gray-900">
+          <div className="text-base leading-7 tracking-tight text-gray-900 text-left ">
             $ {data.budget}
-          </h1>
+          </div>
 
           <div
             style={{
@@ -95,6 +90,7 @@ const ActiveOrder = ({ data }) => {
             margin: "10px",
             color: "grey",
             fontSize: 12,
+            textAlign: "left",
           }}
         >
           {parse(description)}

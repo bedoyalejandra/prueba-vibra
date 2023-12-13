@@ -15,6 +15,7 @@ const PropertiesTable = ({ data, agentInfo }) => {
       <table className="styled-table">
         <thead>
           <tr>
+            <th></th>
             <th>Inmueble</th>
             <th>Aliado o asesor</th>
             <th>Estado</th>
@@ -26,6 +27,12 @@ const PropertiesTable = ({ data, agentInfo }) => {
           {data.emailFincaRaizs.map(function (item, i) {
             return (
               <tr key={i}>
+                <td>
+                  {" "}
+                  <div>
+                    <input type="checkbox" />
+                  </div>
+                </td>
                 <td>
                   <div
                     style={{
@@ -96,19 +103,16 @@ const PropertiesTable = ({ data, agentInfo }) => {
                   <AgentProfile data={agentInfo} />
                 </td>
                 <td>
-                  <div>
-                    <div
-                      style={{
-                        color: "grey",
-                        alignItems: "center",
-                        alignContent: "center",
-                        flexDirection: "row",
-                        fontSize: 12,
-                      }}
-                    >
-                      &#128994;
-                      {item.property.status}
-                    </div>
+                  <div
+                    style={{
+                      color: "grey",
+                      fontSize: 12,
+                      flexDirection: "row",
+                      display: "flex",
+                    }}
+                  >
+                    <div className="text-green-500	mr-1">⬤</div>
+                    {item.property.status}
                   </div>
                   <p
                     style={{
@@ -164,45 +168,16 @@ const PropertiesTable = ({ data, agentInfo }) => {
                     style={{
                       marginTop: 7,
                       display: "flex",
-                      justifyContent: "space-around",
+                      justifyContent: "center",
                     }}
                   >
-                    <section
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        alignContent: "center",
-                        flexDirection: "column",
-                      }}
-                    >
-                      <FaWhatsapp color="DodgerBlue" fontSize="1.5em" />
-                      <p
-                        style={{
-                          color: "DodgerBlue",
-                          fontSize: 10,
-                        }}
-                      >
-                        Mensaje
-                      </p>
-                    </section>
-                    <section
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        alignContent: "center",
-                        flexDirection: "column",
-                      }}
-                    >
-                      <FaPhone color="DodgerBlue" fontSize="1.5em" />
-                      <p
-                        style={{
-                          color: "DodgerBlue",
-                          fontSize: 10,
-                        }}
-                      >
-                        Llamar
-                      </p>
-                    </section>
+                    <FaWhatsapp color="DodgerBlue" fontSize="1.5em" />
+
+                    <FaPhone
+                      color="DodgerBlue"
+                      fontSize="1.5em"
+                      className="ml-5"
+                    />
                   </section>
                 </td>
                 <td>
@@ -237,6 +212,12 @@ const PropertiesTable = ({ data, agentInfo }) => {
           {data.emailFincaRaizs.map(function (item, i) {
             return (
               <tr key={i}>
+                <td>
+                  {" "}
+                  <div>
+                    <input type="checkbox" />
+                  </div>
+                </td>
                 <td>
                   <div
                     style={{

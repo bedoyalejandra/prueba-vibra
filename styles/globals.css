@@ -3,278 +3,334 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 255, 255, 255;
-    --background-end-rgb: 255, 255, 255;
-  }
+	:root {
+		--foreground-rgb: 0, 0, 0;
+		--background-start-rgb: 255, 255, 255;
+		--background-end-rgb: 255, 255, 255;
+	}
 }
+
 .card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+	background-color: #fff;
+	border-radius: 8px;
+	border-left: 1px solid #D0D3D4;
+	border-right: 1px solid #D0D3D4;
+	border-top: 1px solid #D0D3D4;
+	border-bottom: 1px solid #D0D3D4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.button {
+	background-color: #fff;
+	border-radius: 8px;
+	border-left: 1px solid #D0D3D4;
+	border-right: 1px solid #D0D3D4;
+	border-top: 1px solid #D0D3D4;
+	border-bottom: 1px solid #D0D3D4;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+	margin: 10px;
+	height: 30px;
+	width: max-content;
+	padding: 10px;
+}
+
+.row-left {
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.column-left {
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    overflow: auto;
+    flex-direction: column;
 }
 
 .vl {
-  border-left: 6px solid green;
-  height: 500px;
+	border-left: 6px solid green;
+	height: 500px;
 }
 
 .profile-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 300px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	width: 300px;
 }
 
 .orders-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 10px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	padding: 10px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 .styled-table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  width: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	width: 100%;
 }
+
 .styled-table thead tr {
-  background-color: #fff;
-  color: DodgerBlue;
-  border-bottom: 2px solid DodgerBlue;
+	background-color: #fff;
+	color: black;
+	border-bottom: 1px solid #dddddd;
 }
+
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+	text-align: left;
+	padding: 12px 15px;
 }
+
 .styled-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
 }
 
 
 .icon-row {
-  color: grey;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: row;
+	color: grey;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
 }
+
 .bee-row,
-		.bee-row-content {
-			position: relative
-		}
+.bee-row-content {
+	position: relative
+}
 
-		.bee-row-3,
-		.bee-row-3 .bee-row-content {
-			background-color: #ffffff;
-			background-repeat: no-repeat
-		}
+.bee-row-3,
+.bee-row-3 .bee-row-content {
+	background-color: #ffffff;
+	background-repeat: no-repeat
+}
 
-		.bee-row-1,
-		.bee-row-1 .bee-row-content,
-		.bee-row-2,
-		.bee-row-2 .bee-row-content,
-		.bee-row-3,
-		.bee-row-3 .bee-row-content {
-			background-repeat: no-repeat
-		}
+.bee-row-1,
+.bee-row-1 .bee-row-content,
+.bee-row-2,
+.bee-row-2 .bee-row-content,
+.bee-row-3,
+.bee-row-3 .bee-row-content {
+	background-repeat: no-repeat
+}
 
-		body {
-			background-color: #FFFFFF;
-			color: #000000;
-			font-family: Arial, Helvetica Neue, Helvetica, sans-serif
-		}
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif
+}
 
-		.bee-row-1 .bee-col-1 .bee-block-1 a,
-		a {
-			color: #7747ff
-		}
+.bee-row-1 .bee-col-1 .bee-block-1 a,
+a {
+	color: #7747ff
+}
 
-		* {
-			box-sizing: border-box
-		}
+* {
+	box-sizing: border-box
+}
 
-		body,
-		h1,
-		p {
-			margin: 0
-		}
+body,
+h1,
+p {
+	margin: 0
+}
 
-		.bee-row-content {
-			max-width: 1170px;
-			margin: 0 auto;
-			display: flex
-		}
+.bee-row-content {
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex
+}
 
-		.bee-row-content .bee-col-w3 {
-			flex-basis: 25%
-		}
+.bee-row-content .bee-col-w3 {
+	flex-basis: 25%
+}
 
-		.bee-row-content .bee-col-w6 {
-			flex-basis: 50%
-		}
+.bee-row-content .bee-col-w6 {
+	flex-basis: 50%
+}
 
-		.bee-row-content .bee-col-w12 {
-			flex-basis: 100%
-		}
+.bee-row-content .bee-col-w12 {
+	flex-basis: 100%
+}
 
-		.bee-icon .bee-icon-label-right a {
-			text-decoration: none
-		}
+.bee-icon .bee-icon-label-right a {
+	text-decoration: none
+}
 
-		.bee-divider {
-			overflow: auto
-		}
+.bee-divider {
+	overflow: auto
+}
 
-		.bee-divider .center {
-			margin: 0 auto
-		}
+.bee-divider .center {
+	margin: 0 auto
+}
 
-		.bee-menu ul {
-			margin: 0;
-			padding: 0
-		}
+.bee-menu ul {
+	margin: 0;
+	padding: 0
+}
 
-		.bee-icon {
-			display: inline-block;
-			vertical-align: middle
-		}
+.bee-icon {
+	display: inline-block;
+	vertical-align: middle
+}
 
-		.bee-icon .bee-content {
-			display: flex;
-			align-items: center
-		}
+.bee-icon .bee-content {
+	display: flex;
+	align-items: center
+}
 
-		.bee-menu ul {
-			list-style-type: none
-		}
+.bee-menu ul {
+	list-style-type: none
+}
 
-		.bee-paragraph {
-			overflow-wrap: anywhere
-		}
+.bee-paragraph {
+	overflow-wrap: anywhere
+}
 
-		.bee-row-1 .bee-col-1,
-		.bee-row-1 .bee-col-2,
-		.bee-row-1 .bee-col-3 {
-			display: flex;
-			padding-bottom: 5px;
-			padding-top: 5px
-		}
+.bee-row-1 .bee-col-1,
+.bee-row-1 .bee-col-2,
+.bee-row-1 .bee-col-3 {
+	display: flex;
+	padding-bottom: 5px;
+	padding-top: 5px
+}
 
-		.bee-row-1 .bee-row-content {
-			border-radius: 3px;
-			color: #000000
-		}
+.bee-row-1 .bee-row-content {
+	border-radius: 3px;
+	color: #000000
+}
 
-		.bee-row-1 .bee-col-1 {
-			flex-direction: column;
-			justify-content: center
-		}
+.bee-row-1 .bee-col-1 {
+	flex-direction: column;
+}
 
-		.bee-row-1 .bee-col-1 .bee-block-1,
-		.bee-row-2 .bee-col-1 .bee-block-1 {
-			padding: 10px
-		}
+.bee-row-1 .bee-col-1 .bee-block-1,
+.bee-row-2 .bee-col-1 .bee-block-1 {
+	padding: 10px
+}
 
-		.bee-row-1 .bee-col-2 {
-			border-left: 1px solid #eaeaea;
-			border-right: 1px solid #eaeaea;
-			flex-direction: column;
-			justify-content: center
-		}
+.bee-row-1 .bee-col-2 {
 
-		.bee-row-1 .bee-col-2 .bee-block-1,
-		.bee-row-1 .bee-col-3 .bee-block-1 {
-			padding: 10px;
-			text-align: center;
-			width: 100%
-		}
+	flex-direction: column;
+	justify-content: center
+}
 
-		.bee-row-1 .bee-col-3 {
-			flex-direction: column;
-			justify-content: center
-		}
+.bee-row-1 .bee-col-2 .bee-block-1,
+.bee-row-1 .bee-col-3 .bee-block-1 {
+	padding: 10px;
+	text-align: center;
+	width: 100%
+}
 
-		.bee-row-2 .bee-row-content {
-			border-radius: 0;
-			color: #000000
-		}
+.bee-row-1 .bee-col-3 {
+	flex-direction: column;
+	justify-content: center
+}
 
-		.bee-row-2 .bee-col-1,
-		.bee-row-3 .bee-col-1 {
-			padding-bottom: 5px;
-			padding-top: 5px
-		}
+.bee-row-2 .bee-row-content {
+	border-radius: 0;
+	color: #000000
+}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 {
-			color: #101218;
-			font-family: inherit;
-			font-size: 16px;
-			font-weight: 400;
-			padding: 10px;
-			text-align: center
-		}
+.bee-row-2 .bee-col-1,
+.bee-row-3 .bee-col-1 {
+	padding-bottom: 5px;
+	padding-top: 5px
+}
 
-		.bee-row-3 .bee-row-content {
-			color: #000000
-		}
+.bee-row-2 .bee-col-1 .bee-block-2 {
+	color: #101218;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px;
+	text-align: center
+}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 {
-			color: #1e0e4b;
-			font-family: Inter, sans-serif;
-			font-size: 15px;
-			padding-bottom: 5px;
-			padding-top: 5px;
-			text-align: center
-		}
+.bee-row-3 .bee-row-content {
+	color: #000000
+}
 
-		.bee-row-1 .bee-col-1 .bee-block-1 {
-			color: #444a5b;
-			direction: ltr;
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: left
-		}
+.bee-row-3 .bee-col-1 .bee-block-1 {
+	color: #1e0e4b;
+	font-family: Inter, sans-serif;
+	font-size: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: center
+}
 
-		.bee-row-1 .bee-col-1 .bee-block-1 p:not(:last-child) {
-			margin-bottom: 16px
-		}
+.bee-row-1 .bee-col-1 .bee-block-1 {
+	color: #444a5b;
+	direction: ltr;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 120%;
+	text-align: left
+}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon-image {
-			padding: 5px 6px 5px 5px
-		}
+.bee-row-1 .bee-col-1 .bee-block-1 p:not(:last-child) {
+	margin-bottom: 16px
+}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
-			margin-left: 0
-		}
+.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon-image {
+	padding: 5px 6px 5px 5px
+}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
+.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+	margin-left: 0
+}
 
-		@media (max-width:768px) {
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
-		}
+.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+	margin-right: 0
+}
+
+@media (max-width:768px) {
+	.bee-row-content:not(.no_stack) {
+		display: block
+	}
+}

@@ -23,46 +23,11 @@ const AgentProfile = ({ data }) => {
           style={{
             marginTop: 7,
             display: "flex",
-            justifyContent: "space-around",
           }}
         >
-          <section
-            style={{
-              display: "flex",
-              alignItems: "center",
-              alignContent: "center",
-              flexDirection: "column",
-            }}
-          >
-            <FaWhatsapp color="DodgerBlue" fontSize="1.5em" />
-            <p
-              style={{
-                color: "DodgerBlue",
-                fontSize: 10,
-              }}
-            >
-              Mensaje
-            </p>
-          </section>
+          <FaWhatsapp color="DodgerBlue" fontSize="1.5em" />
 
-          <section
-            style={{
-              display: "flex",
-              alignItems: "center",
-              alignContent: "center",
-              flexDirection: "column",
-            }}
-          >
-            <FaPhone color="DodgerBlue" fontSize="1.5em" />
-            <p
-              style={{
-                color: "DodgerBlue",
-                fontSize: 10,
-              }}
-            >
-              Llamar
-            </p>
-          </section>
+          <FaPhone color="DodgerBlue" fontSize="1.5em" className="ml-5" />
         </section>
       </div>
     </div>
