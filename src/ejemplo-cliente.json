@@ -1,0 +1,60 @@
+{
+  "data": {
+    "customer": {
+      "id": "clo1vexv00008nzfs8ep1x681",
+      "name": "Daniel Ochoa",
+      "email": "dacielochoa@gmail.com",
+      "phone": "+573103102020",
+      "propertyRequests": [
+        {
+          "area": 1200,
+          "bathrooms": "2.0",
+          "bedrooms": 3,
+          "budget": "9900000000",
+          "createdAt": "2023-12-10",
+          "description": "Sin cuota de administración Primer piso Unidad cerrada Piso alto mayor al décimo Piscina Salón social",
+          "locations": [
+            {
+              "id": "clokgalsb00064tym4oub9p0o",
+              "term": "Cabeceras, Rionegro, Antioquia, Colombia"
+            },
+            {
+              "id": "clokgalsb00064tym4oub9p1o",
+              "term": "Pontezuela, Rionegro, Antioquia, Colombia"
+            },
+            {
+              "id": "clokgalsb00064tym4oub9p2o",
+              "term": "Pontezuela, Rionegro, Antioquia, Colombia"
+            }
+
+          ],
+          "objective": "venta",
+          "parkingSpots": 2,
+          "propertyTypes": [
+            {
+              "name": "Cabaña",
+              "id": "cl65a32cs0016cmqrfogirk9z"
+            },
+            {
+              "name": "Casa Campestre",
+              "id": "cl65a32cs0016cmqrfogirk8z"
+            }
+          ],
+          "scope": "team",
+          "stratum": 100,
+          "createdBy": {
+            "id": "cl6qkdy8s10822bzqr36d5l3a8",
+            "lastName": "Castaneda",
+            "name": "Edwin",
+            "phone": "+573004169446",
+            "email": "edwincastaneda177@gmail.com",
+            "image": {
+              "publicUrl": "https://res.cloudinary.com/vibra/image/upload/v1679936714/profile-images/clfr2y0y90003hlnz074850k5.jpg",
+              "publicUrlTransformed": "https://res.cloudinary.com/vibra/image/upload/v1679936714/profile-images/clfr2y0y90003hlnz074850k5.jpg"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

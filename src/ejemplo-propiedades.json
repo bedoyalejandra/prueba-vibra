@@ -1,0 +1,61 @@
+{
+    "data": {
+        "emailFincaRaizs": [
+            {
+                "id": "clo1vexw7000cnzfswwss5htw",
+                "property": {
+                    "area": 74,
+                    "bathrooms": "2.0",
+                    "bedrooms": 3,
+                    "id": "cln0f5xfv01nwnzyxuzsx3m5m",
+                    "objective": "venta",
+                    "parkingSpots": 1,
+                    "price": "270000000",
+                    "stratum": 3,
+                    "location": {
+                        "id": "cln0f7kiv01nynzyx2yqlg5je",
+                        "formattedAddress": "Carrera 27 B 37 B sur 80, Envigado, Antioquia, Colombia",
+                        "city": "Envigado, Antioquia, Colombia"
+                    },
+                    "status": "Activo",
+                    "type": "Apartamento",
+                    "images": [
+                        {
+                            "id": "cln0faut401o0nzyxh4w7wcu6",
+                            "image": {
+                                "id": "cln0fatj200d7yxnzbazaa0jb",
+                                "publicUrl": "https://res.cloudinary.com/vibra/image/upload/v1695739138/properties-photos-prod/cln0fatj200d7yxnzbazaa0jb.jpg"
+                            }
+                        }
+                     
+                    ],
+                    "getter": {
+                        "id": "cldf0wa7r0000qr8mge326jhi",
+                        "lastName": "Munoz",
+                        "name": "Carlos",
+                        "phone": "+573103107600",
+                        "image": null
+                    },
+                    "internalCode": "",
+                    "number": 955,
+                    "ownerName": "Luis Fernando Aristizabal",
+                    "ownerPhone": "+57 320 580 2020",
+                    "ownerNotes": "     Hipoteca bancaria Es el encargado, propietario vive en el extranjero, llamar en horarios de de New York",
+                    "team": {
+                        "id": "cl6y0wat145204wdqrrb0kmokw",
+                        "image": {
+                            "publicUrl": "https://res.cloudinary.com/vibra/image/upload/v1674744244/team-profile-images/cldd7hdp80001luqrf0ikdg03.jpg",
+                            "publicUrlTransformed": "https://res.cloudinary.com/vibra/image/upload/v1674744244/team-profile-images/cldd7hdp80001luqrf0ikdg03.jpg"
+                        },
+                        "name": "Arrendamientos Cortes",
+                        "phone": "+573103107650",
+                        "email": null,
+                        "emailToNotifications": null,
+                        "phoneToNotifications": null,
+                        "url": "cortes"
+                    }
+                }
+            }
+        ]
+    }
+}
